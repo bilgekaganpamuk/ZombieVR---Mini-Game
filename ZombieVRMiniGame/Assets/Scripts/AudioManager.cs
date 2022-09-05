@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
 
-    public AudioSource sliceSound;
+
     public AudioSource gunSound;
     public AudioSource musicTheme;
     public AudioSource buttonClickSound;

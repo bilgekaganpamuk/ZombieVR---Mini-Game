@@ -10,8 +10,7 @@ public class SceneLoader : MonoBehaviour
     public OVROverlay Overlay_background;
     public OVROverlay Overlay_text;
 
- //   public Slider LevelSlider;
-  //  public float level = 0.8f;
+
     private void Awake()
     {
         if(instance!=null && instance != this)
@@ -25,10 +24,7 @@ public class SceneLoader : MonoBehaviour
     }
     private void Update()
     {
-     /*   if (LevelSlider != null)
-        {
-            LevelSlider.onValueChanged.AddListener(sliderValueChanged);
-        }*/
+
         }
     public void LoadScene(string SceneName)
     {
@@ -36,10 +32,7 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(ShowOverlayAndLoad(SceneName));
 
     }
-    public  void sliderValueChanged(float value)
-    {
-      //  level = value;
-    }
+
     IEnumerator ShowOverlayAndLoad(string SceneName)
     {
 
@@ -58,7 +51,7 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
 
-       //k CubeSpawnManager.instance.timeRate = level;
+       
         //Disable because its finished
         Overlay_text.enabled = false;
         Overlay_background.enabled = false;
